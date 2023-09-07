@@ -1,18 +1,18 @@
 ---
-eip: 5069
-title: EIP Editor Handbook
-description: Organizational structure, decision making process, and other EIP Editor odds and ends.
-author: Pooja Ranjan (@poojaranjan), Gavin John (@Pandapip1), Sam Wilson (@SamWilsn), et al.
+eip: 2
+title: KTRC Editor Handbook
+description: Organizational structure, decision making process, and other KTRC Editor odds and ends.
+author: original authors Pooja Ranjan (@poojaranjan), Gavin John (@Pandapip1), Sam Wilson (@SamWilsn), et al.
 discussions-to: https://ethereum-magicians.org/t/pr-5069-eip-editor-handbook/9137
 status: Living
 type: Meta
-created: 2022-05-02
+created: 2023-09-06
 requires: 1
 ---
 
 ## Introduction
 
-We, the Ethereum Improvement Proposal (EIP) Editors, maintain a repository of documents related to the Ethereum protocol and its ecosystem. Consider us both _archivists_ making sure the community as a whole does not lose its history, and a _publisher_ making sure interested parties can stay up-to-date with the latest proposals.
+We, the KayTrust Request for Comments (KTRC) Editors, maintain a repository of documents related to the KayYTrust asset and its ecosystem. Consider us both _archivists_ making sure the community as a whole does not lose its history, and a _publisher_ making sure interested parties can stay up-to-date with the latest proposals.
 
 ## Mission
 

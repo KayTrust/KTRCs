@@ -1,6 +1,11 @@
-# KTRC-1: KTRC Purpose and Guidelines  
-Authors	Juan José Miranda <jmirandd@nttdata.com>, David Ammouial <dammouia@nttdata.com>, et al.
-Created	2023-08-27
+---
+eip: 1
+title: KTRC Purpose and Guidelines
+status: Living
+type: Meta
+author: Juan José Miranda <jmirandd@nttdata.com>, David Ammouial <dammouia@nttdata.com>, et al.
+created: 2023-08-27
+---
 
 What is an KTRC?
 ----------------
@@ -281,6 +286,19 @@ Permitted Bitcoin Improvement Proposal URLs must anchor to a specific commit, an
 
 ```
 
+### [](#national-vulnerability-database-nvd) National Vulnerability Database (NVD)
+Links to the Common Vulnerabilities and Exposures (CVE) system as published by the National Institute of Standards and Technology (NIST) may be included, provided they are qualified by the date of the most recent change, using the following syntax:
+
+```
+[CVE-2023-29638 (2023-10-17T10:14:15)](https://nvd.nist.gov/vuln/detail/CVE-2023-29638)
+
+```
+
+Which renders to:
+
+[CVE-2023-29638 (2023-10-17T10:14:15)](https://nvd.nist.gov/vuln/detail/CVE-2023-29638)
+
+
 ### [](#digital-object-identifier-system) Digital Object Identifier System
 
 Links qualified with a Digital Object Identifier (DOI) may be included using the following syntax:
@@ -335,39 +353,30 @@ References to other KTRCs should follow the format `KTRC-N` where `N` is the
 
 Images, diagrams and auxiliary files should be included in a subdirectory of the `assets` folder for that KTRC as follows: `assets/KTRC-N` (where N is to be replaced with the KTRC number). When linking to an image in the KTRC, use relative links such as `../assets/KTRC-1/image.png`.
 
-[](https://KTRCs.ethereum.org/KTRCS/KTRC-1#transferring-KTRC-ownership) Transferring KTRC Ownership
+[](#transferring-KTRC-ownership) Transferring KTRC Ownership
 ----------------------------------------------------------------------------------------------
 
 It occasionally becomes necessary to transfer ownership of KTRCs to a new champion. In general, we'd like to retain the original author as a co-author of the transferred KTRC, but that's really up to the original author. A good reason to transfer ownership is because the original author no longer has the time or interest in updating it or following through with the KTRC process, or has fallen off the face of the 'net (i.e. is unreachable or isn't responding to email). A bad reason to transfer ownership is because you don't agree with the direction of the KTRC. We try to build consensus around an KTRC, but if that's not possible, you can always submit a competing KTRC.
 
 If you are interested in assuming ownership of an KTRC, send a message asking to take over, addressed to both the original author and the KTRC editor. If the original author doesn't respond to the email in a timely manner, the KTRC editor will make a unilateral decision (it's not like such decisions can't be reversed :)).
 
-[asd](#KTRC-editors) KTRC Editors
+[](#KTRC-editors) KTRC Editors
 ----------------------------------------------------------------
+This KTRC is based on the [EIP-1](https://eips.ethereum.org/EIPS/eip-1)
 
 The current KTRC editors are
 
--   Alex Beregszaszi (@axic)
--   Gavin John (@Pandapip1)
--   Greg Colvin (@gcolvin)
--   Matt Garnett (@lightclient)
--   Sam Wilson (@SamWilsn)
--   Zainan Victor Zhou (@xinbenlv)
--   Gajinder Singh (@g11tech)
+-   Juan José Miranda (@jjmiranda)
+-   David Ammouial (@davux)
 
 Emeritus KTRC editors are
 
--   Casey Detrio (@cdetrio)
--   Hudson Jameson (@Souptacular)
--   Martin Becze (@wanderer)
--   Micah Zoltu (@MicahZoltu)
--   Nick Johnson (@arachnid)
--   Nick Savers (@nicksavers)
--   Vitalik Buterin (@vbuterin)
+-   Juan José Miranda (@jjmiranda)
+-   David Ammouial (@davux)
 
-If you would like to become an KTRC editor, please check [KTRC-5069](https://KTRCs.ethereum.org/KTRCS/KTRC-5069).
+If you would like to become an KTRC editor, please check [KTRC-2](./KTRC-2).
 
-[](https://KTRCs.ethereum.org/KTRCS/KTRC-1#KTRC-editor-responsibilities) KTRC Editor Responsibilities
+[](#KTRC-editor-responsibilities) KTRC Editor Responsibilities
 ------------------------------------------------------------------------------------------------
 
 For each new KTRC that comes in, an editor does the following:

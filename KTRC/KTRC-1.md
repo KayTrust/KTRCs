@@ -118,8 +118,7 @@ Each KTRC should have the following parts:
 
 KTRCs should be written in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) format. There is a [template](KTRC-template.md) to follow.
 
-[](#KTRC-header-preamble) KTRC Header Preamble
---------------------------------------------------------------------------------
+##qw KTRC Header Preamble
 
 Each KTRC must begin with an [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style header preamble, preceded and followed by three hyphens (`---`). This header is also termed ["front matter" by Jekyll](https://jekyllrb.com/docs/front-matter/). The headers must appear in the following order.
 
@@ -151,7 +150,7 @@ Headers that permit lists must separate elements with commas.
 
 Headers requiring dates will always do so in the format of ISO 8601 (yyyy-mm-dd).
 
-### [](#author-header) `author` header
+### `author` header
 
 The `author` header lists the names, email addresses or usernames of the authors/owners of the KTRC. Those who prefer anonymity may use a username only, or a first name and a username. The format of the `author` header value must be:
 
@@ -173,38 +172,37 @@ if neither the email address nor the GitHub username are given.
 
 At least one author must use a GitHub username, in order to get notified on change requests and have the capability to approve or reject them.
 
-### [](#discussions-to-header) `discussions-to` header
+### `discussions-to` header
 
 While an KTRC is a draft, a `discussions-to` header will indicate the URL where the KTRC is being discussed.
 
 The preferred discussion URL is a topic on [Wiki internal](https://dev.azure.com/nttdata-peru/KayTrust/_wiki/wikis/KayTrust.wiki/1/Home) for internal KTRC or [Wiki GitHub](https://github.com/KayTrust/wiki-KTRC-public/wiki) for public KTRC. The URL cannot point to Github pull requests, any URL which is ephemeral, and any URL which can get locked over time (i.e. Reddit topics).
 
-### [](#type-header) `type` header
+### `type` header
 
 The `type` header specifies the type of KTRC: Standards Track, Meta, or Informational. If the track is Standards please include the subcategory (Core, Provider, KayWallet, or KayDev).
 
-### [](#category-header) `category` header
+### `category` header
 
 The `category` header specifies the KTRC's category. This is required for standards-track KTRCs only.
 
-### [](#created-header) `created` header
+### `created` header
 
 The `created` header records the date that the KTRC was assigned a number. Both headers should be in yyyy-mm-dd format, e.g. 2001-08-14.
 
-### [](#requires-header) `requires` header
+### `requires` header
 
 KTRCs may have a `requires` header, indicating the KTRC numbers that this KTRC depends on. If such a dependency exists, this field is required.
 
 A `requires` dependency is created when the current KTRC cannot be understood or implemented without a concept or technical element from another KTRC. Merely mentioning another KTRC does not necessarily create such a dependency.
 
-[](#linking-to-external-resources) Linking to External Resources
-----------------------------------------------------------------------------------------------------
+## Linking to External Resources
 
 Other than the specific exceptions listed below, links to external resources SHOULD NOT be included. External resources may disappear, move, or change unexpectedly.
 
 The process governing permitted external resources is described in [EIP-5757](https://eips.ethereum.org/EIPS/eip-5757).
 
-### [](#world-wide-web-consortium-w3c) World Wide Web Consortium (W3C)
+### World Wide Web Consortium (W3C)
 
 Links to a W3C "Recommendation" status specification may be included using normal markdown syntax. For example, the following link would be allowed:
 
@@ -224,7 +222,7 @@ Permitted W3C recommendation URLs MUST anchor to a specification in the technica
 
 ```
 
-### [](#web-hypertext-application-technology-working-group-whatwg) Web Hypertext Application Technology Working Group (WHATWG)
+### Web Hypertext Application Technology Working Group (WHATWG)
 
 Links to WHATWG specifications may be included using normal markdown syntax, such as:
 
@@ -246,7 +244,7 @@ Permitted WHATWG specification URLs must anchor to a specification defined in th
 
 Although not recommended by WHATWG, KTRCs must anchor to a particular commit so that future readers can refer to the exact version of the living standard that existed at the time the KTRC was finalized. This gives readers sufficient information to maintain compatibility, if they so choose, with the version referenced by the KTRC and the current living standard.
 
-### [](#internet-engineering-task-force-ietf) Internet Engineering Task Force (IETF)
+### Internet Engineering Task Force (IETF)
 
 Links to an IETF Request For Comment (RFC) specification may be included using normal markdown syntax, such as:
 
@@ -266,7 +264,7 @@ Permitted IETF specification URLs MUST anchor to a specification with an assigne
 
 ```
 
-### [](#bitcoin-improvement-proposal) Bitcoin Improvement Proposal
+### Bitcoin Improvement Proposal
 
 Links to Bitcoin Improvement Proposals may be included using normal markdown syntax, such as:
 
@@ -286,7 +284,7 @@ Permitted Bitcoin Improvement Proposal URLs must anchor to a specific commit, an
 
 ```
 
-### [](#national-vulnerability-database-nvd) National Vulnerability Database (NVD)
+### National Vulnerability Database (NVD)
 Links to the Common Vulnerabilities and Exposures (CVE) system as published by the National Institute of Standards and Technology (NIST) may be included, provided they are qualified by the date of the most recent change, using the following syntax:
 
 ```
@@ -374,25 +372,22 @@ See the [Citation Style Language Schema](https://resource.citationstyles.org/sc
 
 The top-level URL field must resolve to a copy of the referenced document which can be viewed at zero cost. Values under `additional-urls` must also resolve to a copy of the referenced document, but may charge a fee.
 
-[](#linking-to-other-KTRCs) Linking to other KTRCs
-------------------------------------------------------------------------------------
+## Linking to other KTRCs
 
 References to other KTRCs should follow the format `KTRC-N` where `N` is the KTRC number you are referring to. Each KTRC that is referenced in an KTRC MUST be accompanied by a relative markdown link the first time it is referenced, and MAY be accompanied by a link on subsequent references. The link MUST always be done via relative paths so that the links work in this GitHub repository, forks of this repository, the main KTRCs site, mirrors of the main KTRC site, etc. For example, you would link to this KTRC as `./KTRC-1.md`.
 
-[](#auxiliary-files) Auxiliary Files
-------------------------------------------------------------------------
+## Auxiliary Files
 
 Images, diagrams and auxiliary files should be included in a subdirectory of the `assets` folder for that KTRC as follows: `assets/KTRC-N` (where N is to be replaced with the KTRC number). When linking to an image in the KTRC, use relative links such as `../assets/KTRC-1/image.png`.
 
-[](#transferring-KTRC-ownership) Transferring KTRC Ownership
-----------------------------------------------------------------------------------------------
+## Transferring KTRC Ownership
 
 It occasionally becomes necessary to transfer ownership of KTRCs to a new champion. In general, we'd like to retain the original author as a co-author of the transferred KTRC, but that's really up to the original author. A good reason to transfer ownership is because the original author no longer has the time or interest in updating it or following through with the KTRC process, or has fallen off the face of the 'net (i.e. is unreachable or isn't responding to email). A bad reason to transfer ownership is because you don't agree with the direction of the KTRC. We try to build consensus around an KTRC, but if that's not possible, you can always submit a competing KTRC.
 
 If you are interested in assuming ownership of an KTRC, send a message asking to take over, addressed to both the original author and the KTRC editor. If the original author doesn't respond to the email in a timely manner, the KTRC editor will make a unilateral decision (it's not like such decisions can't be reversed :)).
 
-[](#KTRC-editors) KTRC Editors
-----------------------------------------------------------------
+## KTRC Editors
+
 This KTRC is based on the [EIP-1](https://eips.ethereum.org/EIPS/eip-1)
 
 The current KTRC editors are
@@ -407,8 +402,7 @@ Emeritus KTRC editors are
 
 If you would like to become an KTRC editor, please check [KTRC-2](./KTRC-2).
 
-[](#KTRC-editor-responsibilities) KTRC Editor Responsibilities
-------------------------------------------------------------------------------------------------
+## KTRC Editor Responsibilities
 
 For each new KTRC that comes in, an editor does the following:
 
@@ -428,10 +422,9 @@ Many KTRCs are written and maintained by developers with write access to the Eth
 
 The editors don't pass judgment on KTRCs. We merely do the administrative & editorial part.
 
-[](#style-guide) Style Guide
-----------------------------------------------------------------
+## Style Guide
 
-### [](#titles) Titles
+### Titles
 
 The `title` field in the preamble:
 

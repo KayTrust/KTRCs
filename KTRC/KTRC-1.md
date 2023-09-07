@@ -299,11 +299,46 @@ Which renders to:
 [CVE-2023-29638 (2023-10-17T10:14:15)](https://nvd.nist.gov/vuln/detail/CVE-2023-29638)
 
 
-### [](#digital-object-identifier-system) Digital Object Identifier System
+### Digital Object Identifier System
 
 Links qualified with a Digital Object Identifier (DOI) may be included using the following syntax:
 
-```
+````markdown
+This is a sentence with a footnote.[^1]
+
+[^1]:
+    ```csl-json
+    {
+      "type": "article",
+      "id": 1,
+      "author": [
+        {
+          "family": "Jameson",
+          "given": "Hudson"
+        }
+      ],
+      "DOI": "00.0000/a00000-000-0000-y",
+      "title": "An Interesting Article",
+      "original-date": {
+        "date-parts": [
+          [2022, 12, 31]
+        ]
+      },
+      "URL": "https://sly-hub.invalid/00.0000/a00000-000-0000-y",
+      "custom": {
+        "additional-urls": [
+          "https://example.com/an-interesting-article.pdf"
+        ]
+      }
+    }
+    ```
+````
+
+Which renders to:
+
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable code-block-style -->
+
 This is a sentence with a footnote.[^1]
 
 [^1]:
@@ -333,11 +368,7 @@ This is a sentence with a footnote.[^1]
     }
     ```
 
-```
-
-Which renders to:
-
-This is a sentence with a footnote.[1](https://KTRCs.ethereum.org/KTRCS/KTRC-1#fn:1)
+<!-- markdownlint-restore -->
 
 See the [Citation Style Language Schema](https://resource.citationstyles.org/schema/v1.0/input/json/csl-data.json) for the supported fields. In addition to passing validation against that schema, references must include a DOI and at least one URL.
 
@@ -390,57 +421,44 @@ If the KTRC isn't ready, the editor will send it back to the author for revision
 Once the KTRC is ready for the repository, the KTRC editor will:
 
 -   Assign an KTRC number (generally incremental; editors can reassign if number sniping is suspected)
--   Merge the corresponding [pull request](https://github.com/ethereum/KTRCs/pulls)
+-   Merge the corresponding [pull request](https://github.com/KayTrust/KTRCs/pulls)
 -   Send a message back to the KTRC author with the next step.
 
 Many KTRCs are written and maintained by developers with write access to the Ethereum codebase. The KTRC editors monitor KTRC changes, and correct any structure, grammar, spelling, or markup mistakes we see.
 
 The editors don't pass judgment on KTRCs. We merely do the administrative & editorial part.
 
-[](https://KTRCs.ethereum.org/KTRCS/KTRC-1#style-guide) Style Guide
+[](#style-guide) Style Guide
 ----------------------------------------------------------------
 
-### [](https://KTRCs.ethereum.org/KTRCS/KTRC-1#titles) Titles
+### [](#titles) Titles
 
 The `title` field in the preamble:
 
 -   Should not include the word "standard" or any variation thereof; and
 -   Should not include the KTRC's number.
 
-### [](https://KTRCs.ethereum.org/KTRCS/KTRC-1#descriptions) Descriptions
+### Descriptions
 
 The `description` field in the preamble:
 
 -   Should not include the word "standard" or any variation thereof; and
 -   Should not include the KTRC's number.
 
-### [](https://KTRCs.ethereum.org/KTRCS/KTRC-1#KTRC-numbers) KTRC numbers
+### KTRC numbers
 
-When referring to an KTRC with a `category` of `ERC`, it must be written in the hyphenated form `ERC-X` where `X` is that KTRC's assigned number. When referring to KTRCs with any other `category`, it must be written in the hyphenated form `KTRC-X` where `X` is that KTRC's assigned number.
+When referring to KTRCs with any other `category`, it must be written in the hyphenated form `KTRC-X` where `X` is that KTRC's assigned number.
 
-### [](https://KTRCs.ethereum.org/KTRCS/KTRC-1#rfc-2119-and-rfc-8174) RFC 2119 and RFC 8174
+### RFC 2119 and RFC 8174
 
 KTRCs are encouraged to follow [RFC 2119](https://www.ietf.org/rfc/rfc2119.html) and [RFC 8174](https://www.ietf.org/rfc/rfc8174.html) for terminology and to insert the following at the beginning of the Specification section:
 
 > The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 and RFC 8174.
 
-[](https://KTRCs.ethereum.org/KTRCS/KTRC-1#history) History
---------------------------------------------------------
+## History
 
-This document was derived heavily from [Bitcoin's BIP-0001](https://github.com/bitcoin/bips) written by Amir Taaki which in turn was derived from [Python's PEP-0001](https://peps.python.org/). In many places text was simply copied and modified. Although the PEP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are not responsible for its use in the Ethereum Improvement Process, and should not be bothered with technical questions specific to Ethereum or the KTRC. Please direct all comments to the KTRC editors.
+This document was derived heavily from [Ethereum's EIP-1](https://eips.ethereum.org/EIPS/eip-1) written by Martin Becze, Hudson Jameson, et al. which in turn was derived from [Bitcoin's BIP-0001](https://github.com/bitcoin/bips) written by Amir Taaki which in turn was derived from [Python's PEP-0001](https://peps.python.org/). In many places text was simply copied and modified. Although the PEP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are not responsible for its use in the KayTrust Request for Comments, and should not be bothered with technical questions specific to KayTrust or the KTRC. Please direct all comments to the KTRC editors.
 
-[](https://KTRCs.ethereum.org/KTRCS/KTRC-1#copyright) Copyright
-------------------------------------------------------------
+## Copyright
 
-Copyright and related rights waived via [CC0](https://KTRCs.ethereum.org/LICENSE).
-
-1.  Jameson, H. (n.d.). *An Interesting Article*. https://doi.org/00.0000/a00000-000-0000-y (Original work published 2022)
-
-    [↩](https://KTRCs.ethereum.org/KTRCS/KTRC-1#fnref:1)
-
-Citation
---------
-
-Please cite this document as:
-
-Martin Becze <<mb@ethereum.org>>, Hudson Jameson <<hudson@ethereum.org>>, et al., "KTRC-1: KTRC Purpose and Guidelines," *Ethereum Improvement Proposals*, no. 1, October 2015. [Online serial]. Available: https://KTRCs.ethereum.org/KTRCS/KTRC-1.
+Copyright and related rights ***TBD***.

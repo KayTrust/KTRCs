@@ -418,7 +418,7 @@ Once the KTRC is ready for the repository, the KTRC editor will:
 -   Merge the corresponding [pull request](https://github.com/KayTrust/KTRCs/pulls)
 -   Send a message back to the KTRC author with the next step.
 
-Many KTRCs are written and maintained by developers with write access to the Ethereum codebase. The KTRC editors monitor KTRC changes, and correct any structure, grammar, spelling, or markup mistakes we see.
+Many KTRCs are written and maintained by developers with write access to the KayTrust codebase. The KTRC editors monitor KTRC changes, and correct any structure, grammar, spelling, or markup mistakes we see.
 
 The editors don't pass judgment on KTRCs. We merely do the administrative & editorial part.
 

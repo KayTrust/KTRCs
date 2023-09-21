@@ -5,6 +5,7 @@ status: Living
 type: Meta
 author: Juan José Miranda <jmirandd@nttdata.com>, David Ammouial <dammouia@nttdata.com>, et al.
 created: 2023-08-27
+updated: 2023-09-20
 ---
 
 What is an KTRC?
@@ -454,4 +455,4 @@ This document was derived heavily from [Ethereum's EIP-1](https://eips.ethereum.
 
 ## Copyright
 
-Copyright and related rights ***TBD***.
+Copyright and related rights - One option is Apache 2... ***TBD***.

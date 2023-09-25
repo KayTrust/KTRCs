@@ -1,5 +1,5 @@
 ---
-eip: 1
+ktrc: 1
 title: KTRC Purpose and Guidelines
 status: Living
 type: Meta
@@ -25,11 +25,14 @@ KTRC Types
 
 There are three types of KTRC:
 
--   A Standards Track KTRC describes any change that affects most or all KayTrust implementations, such as---a change to the KayWallet feature, a change in supporting new DLTs for trust layer, proposed application standards/conventions, or any change or addition that affects the interoperability of applications using KayTrust. Standards Track KTRCs consist of three parts---a design document, an implementation, and (if warranted) an update to the formal specifications. Furthermore, Standards Track KTRCs can be broken down into the following categories:
+-   A Standards Track KTRC describes any change that affects most or all KayTrust implementations, such as---a change to the KayWallet feature, a change in supporting new DLTs for trust layer, proposed application standards/conventions, or any change or addition that affects the interoperability of applications using KayTrust. Standards Track KTRCs consist of three parts---a design document, an implementation, and (if warranted) an update to the formal specifications.
+Please refer the followings KTRCs for source code contribution guidelines for KayTrust Provider: [KTRC-5.md](./KTRC-5.md), KayDev: [KTRC-4.md](./KTRC-4.md) and KayWallet: [KTRC-3.md](./KTRC-3.md).
+Furthermore, Standards Track KTRCs can be broken down into the following categories:
     -   Core: improvements requiring integrate or modify industry standards (e.g. when are availables), as well as changes that are not necessarily critical but may be relevant to main features of the asset in general (e.g. when are availables).
     -   Provider: improvements requiring a new libraries or base software (e.g. when are availables), as well as changes that are not necessarily critical but may be relevant to main features in KayTrust Provider or APIs (Storage, Issuer, DID, Blockchain, Verifier) (e.g. when are availables).
     -   KayDev: improvements requiring a new libraries or base software (e.g. when are availables), as well as changes that are not necessarily critical but may be relevant to main features in KayDev libraries.
-    - KayWallet: improvements requiring a new libraries (e.g. when are availables), as well as changes that are not necessarily critical but may be relevant to main features in KayWallet.
+    - KayWallet: improvements requiring a new libraries (e.g. when are availables), as well as changes that are not necessarily critical but may be relevant to main features in KayWallet. Keep in mind that the KayWallet source code will always be unique and will have different deployments as necessary, considering configuration files to activate/deactivate features and branding.
+
 -   A Meta KTRC describes a process surrounding KayTrust asset or proposes a change to (or an event in) a process. Process KTRCs are like Standards Track KTRCs but apply to areas other than the KayTrust asset itself. They may propose an implementation, but not to KayTrust's codebase; they often require community consensus; unlike Informational KTRCs, they are more than recommendations, and users are typically not free to ignore them. Examples include procedures, guidelines, changes to the decision-making process, and changes to the tools or environment used in KayTrust development. Any meta-KTRC is also considered a Process KTRC.
 
 -   An Informational KTRC describes an KayTrust design issue, or provides general guidelines or information to the KayTrust community, but does not propose a new feature. Informational KTRCs do not necessarily represent KayTrust community consensus or a recommendation, so users and implementers are free to ignore Informational KTRCs or follow their advice.
@@ -89,6 +92,8 @@ If this period results in necessary normative changes it will revert the KTRC to
 Final - This KTRC represents the final standard. A Final KTRC exists in a state of finality and should only be updated to correct errata and add non-normative clarifications.
 
 A PR moving an KTRC from Last Call to Final SHOULD contain no changes other than the status update. Any content or editorial proposed change SHOULD be separate from this status-updating PR and committed prior to it.
+***Para que un KTRC pase a estado FINAL el desarrollo debería de estar planificado en el backlog.
+No se podrá aprobar ningun PR de código fuente sino está asociado a una KTRC indirectamente.***
 
 Stagnant - Any KTRC in `Draft` or `Review` or `Last Call` if inactive for a period of 6 months or greater is moved to `Stagnant`. An KTRC may be resurrected from this state by Authors or KTRC Editors through moving it back to `Draft` or it's earlier status. If not resurrected, a proposal may stay forever in this status.
 

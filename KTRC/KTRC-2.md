@@ -1,5 +1,5 @@
 ---
-eip: 2
+ktrc: 2
 title: KTRC Editor Handbook
 description: Organizational structure, decision making process, and other KTRC Editor odds and ends.
 author: original authors Pooja Ranjan (@poojaranjan), Gavin John (@Pandapip1), Sam Wilson (@SamWilsn), et al.

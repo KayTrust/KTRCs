@@ -1,14 +1,13 @@
 ---
-ktrc: <number of ktrc when created>
-title: <The KTRC title is a few words, not a complete sentence>
-description: <Description is one full (short) sentence>
-author: <a comma separated list of the author's or authors' name + GitHub username (in parenthesis), or name and email (in angle brackets).  Example, FirstName LastName (@GitHubUsername), FirstName LastName <foo@bar.com>, FirstName (@GitHubUsername) and GitHubUsername (@GitHubUsername)>
-discussions-to: <URL>
+ktrc: 4
+title: KayDev Contribution Guidelines
+description: KayDev Contributions Guidelines for all KTRC KayDev editor.
+author: David A., Juan José Miranda
+discussions-to: Internal
 status: Draft
-type: <Standards Track, Meta, or Informational>
-category: <Core, Provider, KayWallet, KayDev> # Only required for Standards Track. Otherwise, remove this field.
-created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
-requires: <KTRC number(s)> # Only required when you reference an KTRC in the `Specification` section. Otherwise, remove this field.
+type: Meta
+created: 2023-09-24
+requires: KTRC-1
 ---
 
 <!--

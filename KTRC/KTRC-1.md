@@ -61,15 +61,15 @@ Once the idea has been vetted, your next responsibility will be to present (by m
 
 ### [](#core-KTRCs) Core KTRCs
 
-For Core KTRCs, given that they require client implementations to be considered Final (see "KTRCs Process" below), you will need to either provide an implementation for clients or convince clients to implement your KTRC.
+For Core KTRCs, given that they will affects more than one component of KayTrust Ecosystem (see "KTRCs Process" below), you will need to either provide an reference implementation or convince all making decissors to implement your KTRC.
 
-The best way to get client implementers to review your KTRC is to present it on an AllCoreDevs call. You can request to do so by posting a comment linking your KTRC on an [Global channels for KayTrust Community](https://aver.cual.es.tbd).
+The best way to get making decissors to review your KTRC is to present it on an call. You can request to do so by posting a comment linking your KTRC on an [Global channels for KayTrust Community](https://aver.cual.es.tbd). ***TBD***
 
-The AllCoreDevs call serves as a way for client implementers to do three things. First, to discuss the technical merits of KTRCs. Second, to gauge what other SSI products and assets will be implementing. Third, to coordinate KTRC implementation for future upgrades.
+The call serves as a way for making decissors to do three things. First, to discuss the technical merits of KTRCs. Second, to gauge what other SSI products and assets will be implementing. Third, to coordinate KTRC implementation for future upgrades.
 
-These calls generally result in a "rough consensus" around what KTRCs should be implemented. This "rough consensus" rests on the assumptions that KTRCs are not contentious enough to cause an asset fork and that they are technically sound.
+These calls generally result in a "rough consensus" around what KTRCs should be implemented. This "rough consensus" rests on the assumptions that KTRCs are not contentious enough to cause an contradiction with "One KayTrust" mindset and that they are technically sound.
 
-:warning: The KTRCs process and AllCoreDevs call were not designed to address contentious non-technical issues, but, due to the lack of other ways to address these, often end up entangled in them. This puts the burden on KayTrust implementers to try and gauge community sentiment, which hinders the technical coordination function of KTRCs and AllCoreDevs calls. If you are shepherding an KTRC, you can make the process of building community consensus easier by making sure that [Wiki pages](https://wiki.kaytrust.id/) ***TBD*** thread for your KTRC includes or links to as much of the community discussion as possible and that various stakeholders are well-represented.
+:warning: The KTRCs process and call were not designed to address contentious non-technical issues, but, due to the lack of other ways to address these, often end up entangled in them. This puts the burden on KayTrust implementers to try and gauge community sentiment, which hinders the technical coordination function of KTRCs and calls. If you are shepherding an KTRC, you can make the process of building community consensus easier by making sure that [Wiki pages](https://wiki.kaytrust.id/) ***TBD*** thread for your KTRC includes or links to as much of the community discussion as possible and that various stakeholders are well-represented.
 
 *In short, your role as the champion is to write the KTRC using the style and format described below, shepherd the discussions in the appropriate forums, and build community consensus around the idea.*
 

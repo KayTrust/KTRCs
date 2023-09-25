@@ -12,7 +12,7 @@ requires: KTRC-1
 ---
 
 ## Abstract
-This KTRC will contain all the guidelines to take into account when contributing to the KayWallet source code. If you are a KayWaller developer please take all of these guidelines into account.
+This KTRC will contain all the guidelines to take into account when contributing to the KayWallet source code. If you are a KayWallet developer please take all of these guidelines into account.
 
 ## Motivation
 Document as clearly as possible all the guidelines to take into account to contribute to the KayWallet source code.

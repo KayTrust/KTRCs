@@ -5,7 +5,7 @@ status: Living
 type: Meta
 author: Juan José Miranda <jmirandd@nttdata.com>, David Ammouial <dammouia@nttdata.com>, et al.
 created: 2023-08-27
-updated: 2023-09-20
+updated: 2023-09-25
 ---
 
 What is an KTRC?

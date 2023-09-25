@@ -460,4 +460,4 @@ This document was derived heavily from [Ethereum's EIP-1](https://eips.ethereum.
 
 ## Copyright
 
-Copyright and related rights - One option is Apache 2... ***TBD***.
+Copyright and related rights - One option is Apache 2 or for this specific KTRC CC0 because is based on the content with that license... ***TBD***.

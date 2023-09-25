@@ -46,7 +46,7 @@ requires: <KTRC number(s)> # Only required when you reference an KTRC in the `Sp
 ## Specification
 
 <!--
-  The Specification section should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Ethereum platforms (besu, erigon, ethereumjs, go-ethereum, nethermind, or others).
+  The Specification section should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any other solutions in the market or standards.
 
   It is recommended to follow RFC 2119 and RFC 8170. Do not remove the key word definitions if RFC 2119 and RFC 8170 are followed.
 
@@ -118,4 +118,4 @@ Needs discussion.
 
 ## Copyright
 
-Copyright and related rights waived via [CC0](../LICENSE.md).
+Copyright and related rights waived via [license](../LICENSE.md).

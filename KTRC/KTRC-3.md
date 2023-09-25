@@ -4,7 +4,7 @@ title:  KayWallet Contribution Guidelines
 description: KayWallet Contributions Guidelines for all KTRC KayWallet editor.
 author: David A., Juan José Miranda
 discussions-to: Internal
-status: Draft
+status: Living
 type: Meta
 created: 2023-09-24
 updated: 2023-09-25
